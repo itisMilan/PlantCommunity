@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+<div class="grid absolute inset-0 grid-cols-[1fr_2fr_1fr] grid-rows-[max-content_1fr]">
+  <div class="navbar bg-primary col-span-full   ">
+    <div class="flex-1 ">
+      <a class="btn btn-ghost normal-case text-xl text-white ">Planters Junction</a>
+    </div>
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+      </button>
+    </div>
+  </div>
+  <section class=" border-r border-black text-center  ">
+    <a href="/profile">
+
+      <img
+        src="https://%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.6yuCxX3agcmqdUaie4OZwQAAAA%26pid%3DApi&f=1&ipt=8a3e002a8ac3ed71574c996dcc254984688c75d4931ae28a21c93e69e9a2b9aa&ipo=images"
+        class="mx-auto mt-2 w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2" alt="Avatar" />
+      <div class="text-center mx-auto py-2 w-1/2 mt-2 card bg-base-300">
+
+        <h5 class="my-2 text-xl font-medium leading-tight">John Doe</h5>
+        <p class="text-primary dark:text-neutral-400 leading-tight">Web designer</p>
+      </div>
+    </a>
+  </section>
+  <section class="text-center overflow-x-auto">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <ul class="row list-unstyled">
+          <% for(var i=0; i<posts.length; i++) {%>
+            <li class="card">
+
+              <div class="card mx-auto flex justify-center  card-compact w-96 h-72 bg-base-100 shadow-xl mb-2">
+                <figure> <a href="/post/<%= posts[i]._id%>">
+                    <img class="img-fluid " src="<%= posts[i].image%>">
+                  </a></figure>
+                <!-- <div class="card-body"> -->
+                <!-- <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p> -->
+                <!-- <div class="card-actions justify-start">
+                  <button class="btn  btn-primary">Buy Now</button>
+                </div> -->
+                <!-- </div> -->
+              </div>
+
+            </li>
+            <% } %>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <section class=" border-l border-black text-center">Third</section>
+
+
+
