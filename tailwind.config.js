@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),require("tw-elements/dist/plugin.cjs")],
   daisyui:{
-    themes:["garden","forest","cupcake"]
+    themes:["emerald","forest","cupcake"]
   }
 
 }
