@@ -41,3 +41,5 @@ Overall, building this Plant Community App was a great learning experience and a
 ## Lessons Learned
 
 AI can add value: The AI function implemented in this app can add value to users by helping them identify plants and providing relevant information. It is important to keep exploring new technologies and ways to improve the user experience.
+
+WireFrame:https://miro.com/app/board/uXjVMTfpc-4=/
